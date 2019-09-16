@@ -23,7 +23,7 @@ class Store < ActiveRecord::Base
   has_many :employees
 end
 
-myStore = gets.chomp
+myStore = "Vancouver"
 
 m = Store.create(name: myStore)
 puts m.errors.messages
